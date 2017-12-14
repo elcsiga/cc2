@@ -1,0 +1,22 @@
+
+
+<app-header></app-header>
+<app-side-menu></app-side-menu>
+
+<div class="verticalBar">
+  <section></section>
+</div>
+
+<div class="scrollContainer">
+  <section class="header">
+    <!-- placeholder -->
+  </section>
+  <section class="content" [@routerTransition]="getState(o)">
+    <router-outlet #o="outlet"></router-outlet>
+  </section>
+  <section class="footer">
+    <app-footer></app-footer>
+  </section>
+</div>
+
+

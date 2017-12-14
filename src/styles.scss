@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Bad+Script|Lato|Nothing+You+Could+Do');
+@import "./variables";
+
+html, body {
+  height: 100%;
+  background-color: gray;
+  color: white;
+  font-size: 16px;
+  font-family: 'Bad Script', cursive;
+
+  background-image: url(/assets/background.png);
+  background-position: center bottom;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+div, section {
+  position: relative;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  width: $barWidth;
+  margin: 0 auto;
+}
+
+.clearfix:before, .clearfix:after, section:before, section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a {
+  text-decoration: none;
+}

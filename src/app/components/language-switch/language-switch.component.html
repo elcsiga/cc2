@@ -1,0 +1,8 @@
+<a href="#" *ngIf="!isCurrentLanguage"
+   (click)="$event.preventDefault();setCurrentLanguage()"
+>
+  {{code}}
+</a>
+<span *ngIf="isCurrentLanguage">
+  {{code}}
+</span>

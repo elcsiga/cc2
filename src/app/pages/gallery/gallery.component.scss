@@ -1,0 +1,14 @@
+@import "../../../variables";
+$picSize : $barWidth / 4;
+
+.picture {
+  float:left;
+  display: inline-block;
+  width: $picSize;
+
+
+  img {
+    width: $picSize;
+    object-fit: contain;
+  }
+}

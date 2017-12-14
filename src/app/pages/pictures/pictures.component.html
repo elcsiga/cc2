@@ -1,0 +1,5 @@
+<div class = "picture" *ngFor="let picture of pictures; let i = index">
+  <a routerLink="/picture/{{i}}">
+    <img [src] = "'/assets/pictures/thumbnail/' + picture" />
+  </a>
+</div>

@@ -1,0 +1,42 @@
+@import "../../../variables";
+
+div {
+  font-family: 'Nothing You Could Do', cursive;
+  font-size: 1.1rem;
+  color: white;
+  line-height: 2.5;
+
+  z-index: 1;
+  position: fixed;
+  top: $headerHeight;
+  left: 0;
+  bottom: 0;
+  width: $sideMenuWidth;
+  overflow: auto;
+
+  background-image: url(/assets/graphics/Vertikalis-menu_vagott.png);
+  background-size: cover;
+
+  transform: translate(-$sideMenuWidth, 0);
+  -webkit-transition: transform $transitionTime; /* Safari */
+  transition: transform $transitionTime;
+
+  &.visible {
+    transform: translate(0, 0);
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      color: red;
+    }
+  }
+}

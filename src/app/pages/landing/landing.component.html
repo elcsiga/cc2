@@ -1,0 +1,54 @@
+
+<div *ngIf="language === 'hu'">
+  <p>
+    „Az igazi művészet nem olyasvalami, amely csak annyira ér el minket, hogy képesek legyünk azt szellemi és lelki szinten befogadni, hanem az igazi művészet az, amitől növekedünk, fejlődünk és gyógyulunk.
+    Az igazi művészet mindig is egy gyógyulást hozó varázsszer volt”
+  </p>
+
+  <p>
+    Rudolf Steiner<br />
+    Antropozófiai embertan és pedagógia<br />
+    /GA 304a; 1. kiadás 1979.; 28. old./
+  </p>
+</div>
+
+<div *ngIf="language === 'en'">
+  <p>
+    “Real art is not something that comes through only to the extent that one can absorb it intellectually and spiritually, but rather is what makes one grow, develop and heal. Real art has always been a healing magic potion”
+  </p>
+
+  <p>
+    Rudolf Steiner <br />
+    Anthroposophical study of mankind and pedagogy<br />
+    CE 304a; 1. edition 1979., page 28.
+  </p>
+</div>
+
+<div *ngIf="language === 'de'">
+  <p>
+    „Echte Kunst ist eben nicht etwas, was bloß an den Menschen herankommt so, daß er es in Seele und Geist ergreifen kann, echte Kunst ist etwas, was den Menschen wachsen, gesunden und gedeihen macht. Echte Kunst war immer ein heilbringendes Zaubermittel“
+  </p>
+  <p>
+    Rudolf Steiner
+    Anthroposophische Menschenkunde und Pädagogik
+    GA 304a, 1. Auflage 1979., Seite 28.
+  </p>
+</div>
+
+<ul>
+  <li>
+    <a routerLink="/the-painting-process">
+      <app-translate key="menu.thePaintingProcess"></app-translate>
+    </a>
+  </li>
+  <li>
+    <a routerLink="/gallery">
+      <app-translate key="menu.gallery"></app-translate>
+    </a>
+  </li>
+  <li>
+    <a routerLink="/services">
+      <app-translate key="menu.services"></app-translate>
+    </a>
+  </li>
+</ul>

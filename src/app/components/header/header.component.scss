@@ -1,0 +1,77 @@
+@import "../../../variables";
+
+:host {
+  color: white;
+  background-color: rgba(0,0,0,0.9);
+
+  height: $headerHeight;
+
+  > div {
+    position: relative;
+
+    margin: auto;
+    width: $barWidth;
+    height: $headerHeight;
+
+    text-align: center;
+    a {
+      color: white;
+    }
+
+
+
+    > .menuButton {
+      position: absolute;
+      top: 10px;
+      left: 20px;
+
+      img {
+        width: 50px;
+        height: 20px;
+      }
+    }
+    > .logo {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: $barWidth;
+    }
+
+    .bg {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%,0);
+      height: $headerHeight;
+    }
+
+    .languagesButtons {
+      font-family: 'Lato', sans-serif;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: .7rem;
+
+      position: absolute;
+      top: 10px;
+      text-align: right;
+      width: 100px;
+
+      right: 10px;
+    }
+
+    h1 {
+      font-family: 'Nothing You Could Do', cursive;
+      font-size: 1.4rem;
+      color: white;
+      letter-spacing: .2em;
+
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+      margin: 0;
+    }
+  }
+}

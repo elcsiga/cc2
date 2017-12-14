@@ -1,0 +1,19 @@
+<div>
+
+  <img class="bg" src="assets/graphics/2_Vertik-menu-es-header_vag.png" />
+  <img class="logo" src="assets/graphics/1_Logo_vagott.png" />
+
+  <div class="menuButton">
+    <a href="#" (click)="$event.preventDefault();toggleSideMenu()">
+      <img class="logo" src="assets/graphics/3_Iniciale_vagott.png" />
+    </a>
+  </div>
+
+  <div class="languagesButtons">
+    <app-language-switch code="hu"></app-language-switch> &nbsp;
+    <app-language-switch code="en"></app-language-switch> &nbsp;
+    <app-language-switch code="de"></app-language-switch>
+  </div>
+  <h1><a routerLink="/">Cosmos and colours</a></h1>
+</div>
+

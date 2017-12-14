@@ -1,0 +1,27 @@
+import {ApplicationRef, Component, OnInit} from '@angular/core';
+import {SideMenuService} from '../../services/side-menu.service';
+import {LanguageService} from '../../services/language.service';
+
+@Component({
+  selector: 'app-header',
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.scss']
+})
+export class HeaderComponent implements OnInit {
+
+  constructor(
+    private sideMenuService: SideMenuService,
+    private languageService: LanguageService,
+    private appRef: ApplicationRef
+  ) { }
+
+  ngOnInit() {
+  }
+  toggleSideMenu(e) {
+    this.sideMenuService.toggle();
+  }
+  setCurrentLanguage( lang: string) {
+    this.languageService.setCurrentLanguage(lang);
+    this.appRef.tick();
+  }
+}

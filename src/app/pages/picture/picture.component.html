@@ -1,0 +1,14 @@
+<div class="gallery">
+  <swiper [config]="config" [(index)]="id">
+
+    <div *ngFor="let picture of pictures; let i = index">
+      <img [src] = "'/assets/pictures/thumbnail/' + picture + '.png'" />
+
+      <div class = "title">
+        <app-translate key="gallery.{{picture}}"></app-translate>
+      </div>
+    </div>
+
+  </swiper>
+</div>
+
